@@ -7,6 +7,8 @@ import re
 ##############################
 #          FUNCTION          #
 ##############################
+
+
 def bin(binary):
     pos = 0
     result = 0
@@ -20,6 +22,7 @@ def bin(binary):
         pos += 1
     return result
 
+
 def not_bin(text):
     if re.search(r"[^01]", text):
         return 1
@@ -28,7 +31,9 @@ def not_bin(text):
 #########################
 #          RUN          #
 #########################
-def Run_bin():
+
+
+def Run():
     while True:
         code = input("Please enter binary code.\n")
         print(bin(code))
